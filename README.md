@@ -46,17 +46,17 @@
 
 - 身份验证
 
-    /**
-     * 身份验证
-     * @param app appId(应用ID)和appKey ,desKey
-     * 登录商户后台 : https://mch.ipaynow.cn ->商户中心->应用信息可以新增应用或查看appKey
-     * @param cardName  姓名
-     * @param idcard    身份证
-     * @param mhtOrderNo    商户订单号(可空,为空时自动生成)
-     * @return
-     */
-	 
-    function IdentityAuth(app,cardName,idcard,mhtOrderNo)
+		/**
+		 * 身份验证
+		 * @param app appId(应用ID)和appKey ,desKey
+		 * 登录商户后台 : https://mch.ipaynow.cn ->商户中心->应用信息可以新增应用或查看appKey
+		 * @param cardName  姓名
+		 * @param idcard    身份证
+		 * @param mhtOrderNo    商户订单号(可空,为空时自动生成)
+		 * @return
+		 */
+		 
+		function IdentityAuth(app,cardName,idcard,mhtOrderNo)
 
 
 - 返回map各值的含义
