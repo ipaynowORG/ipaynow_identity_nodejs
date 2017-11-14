@@ -116,6 +116,7 @@
             * @param mhtOrderNo    商户订单号
             * @return
             */
+			
 			function IdentityAuthQuery(app,mhtOrderNo)
 
 - 返回map中的值的含义
@@ -179,6 +180,7 @@
          * @param mhtOrderNo    商户订单号(可空,为空时自动生成)
          * @return
          */
+		 
         function CardAuth(app,idCardName,idCard,bankCardNum,mhtOrderNo)
 
 
@@ -246,7 +248,8 @@
          * 登录商户后台 : https://mch.ipaynow.cn ->商户中心->应用信息可以新增应用或查看appKey
          * @param mhtOrderNo
          * @return
-        */
+         */
+		
 		function CardAuthQuery(app,mhtOrderNo)
 
 
@@ -319,7 +322,8 @@
          * @param mobile    手机号
          * @param mhtOrderNo    商户订单号
          * @return
-        */
+         */
+		
         function MobileNoAuth(app,idCardName,idCard,mobile,mhtOrderNo)
 
 
@@ -382,6 +386,7 @@
          * @param mhtOrderNo
          * @return
          */
+		 
 		function MobileNoAuthQuery(app,mhtOrderNo)
 
 
