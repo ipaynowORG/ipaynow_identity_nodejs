@@ -55,6 +55,7 @@
      * @param mhtOrderNo    商户订单号(可空,为空时自动生成)
      * @return
      */
+	 
     function IdentityAuth(app,cardName,idcard,mhtOrderNo)
 
 
