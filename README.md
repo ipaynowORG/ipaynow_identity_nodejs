@@ -116,7 +116,7 @@
             * @param mhtOrderNo    商户订单号
             * @return
             */
-        function IdentityAuthQuery(app,mhtOrderNo)
+			function IdentityAuthQuery(app,mhtOrderNo)
 
 - 返回map中的值的含义
 
@@ -247,7 +247,7 @@
          * @param mhtOrderNo
          * @return
         */
-    function CardAuthQuery(app,mhtOrderNo)
+		function CardAuthQuery(app,mhtOrderNo)
 
 
 - 返回map中的值的含义
@@ -382,7 +382,7 @@
          * @param mhtOrderNo
          * @return
          */
-    function MobileNoAuthQuery(app,mhtOrderNo)
+		function MobileNoAuthQuery(app,mhtOrderNo)
 
 
 
