@@ -2,10 +2,11 @@
 
 var util = require('./util');
 
-exports.App = function (appId,appKey,desKey){
+exports.App = function (appId,appKey,desKey,isDev){
 	this.appId=appId;
 	this.appKey=appKey;
 	this.desKey = desKey;
+	this.isDev = isDev;
 }
 
      /**
@@ -182,8 +183,13 @@ function query(app,requestMap,funcode) {
 	message = encodeURIComponent(message);
 
 	
-
-	return post("funcode="+funcode+"&message="+message,"https://dby.ipaynow.cn/identify",app);
+	var url = "";
+	if(app.isDev){
+		url = "https://dby.ipaynow.cn/identify";
+	}else{
+		url = "https://s.ipaynow.cn/auth";
+	}
+	return post("funcode="+funcode+"&message="+message,url,app);
 }
 
 
